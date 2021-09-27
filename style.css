@@ -325,45 +325,21 @@ circle{
    
 }
 
-circle.p25{
-    animation: p25 2s linear forwards;
-}
-
-circle.p50{
-    animation: p50 2s linear forwards;
-}
-
-circle.p65{
-    animation: p65 2s linear forwards;
-}
-
-circle.p75{
-    animation: p75 2s linear forwards;
-}
-
-circle.p85{
-    animation: p85 2s linear forwards;
-}
-
 svg {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-@keyframes p50 {
+@keyframes p25{
     100%{
-        stroke-dashoffset:310;
+        stroke-dashoffset:232;
     }
 }
 
-
-@keyframes p25{
-    from{
-        stroke-dashoffset:310;
-    }
-    to{
-        stroke-dashoffset:232;
+@keyframes p35{
+    100%{
+        stroke-dashoffset:201;
     }
 }
 
@@ -373,9 +349,15 @@ svg {
     }
 }
 
-@keyframes p65 {
+@keyframes p60 {
     100%{
-        stroke-dashoffset:108;
+        stroke-dashoffset:124;
+    }
+}
+
+@keyframes p70 {
+    100%{
+        stroke-dashoffset:93;
     }
 }
 
@@ -385,9 +367,9 @@ svg {
     }
 }
 
-@keyframes p85 {
+@keyframes p80 {
     100%{
-        stroke-dashoffset:46.5;
+        stroke-dashoffset:62;
     }
 }
 
@@ -401,54 +383,86 @@ svg {
     margin: 0 auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: 270px 270px 270px;
-    grid-template-rows: 200px 200px 200px;
-    grid-gap: 1rem;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px ;
+    grid-gap:1rem 2rem;
 }
- 
-.grid-proyectos .item a {
+
+.grid-proyectos .item {
     position: relative;
     display: block;
     overflow: hidden;
-    width: 270px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1c1b1b, #2e2e2e,#1c1c1c);;
+    box-shadow: -5px 5px 13px #0e0e0e,
+    -5px 5px 13px #0e0e0e;
 }
   
-.grid-proyectos .item a span,.grid-proyectos .item a img {
+.grid-proyectos .item p{
+    font-weight: 300;
+    text-align: center;
+    font-size: 15pt;
+    color: #eeedf0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+ 
+.grid-proyectos .item .background ,
+.grid-proyectos .item img {
     transition: transform 0.5s ease-out;
   }
   
-.grid-proyectos .item a img {
+.grid-proyectos .item img {
     display: inline-block;
-    border-radius: 10px;
-    object-fit:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit:fill;
     width: 100%;
-    height: 100%;
+    height: 85%;
   }
   
-.grid-proyectos .item  a span {
+.grid-proyectos .item .background {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     transform: translateX(100%);
     color: #eeedf0;
     padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 85%;
+    width: 100%; 
+    background-color: #1615154a;
 }
-  
-.grid-proyectos .item a:hover img {
+
+.grid-proyectos .item .background span{
+    display: block;
+}
+
+.grid-proyectos .item .background a{
+    text-decoration: none;
+    color: #eeedf0;
+    line-height: 3;
+    color:#b8124c;
+    font-weight: 700;
+}
+.grid-proyectos .item .background a:hover{
+    color: #eeedf0;
+    font-weight: 700;
+}
+.grid-proyectos .item:hover img {
     transform: translateX(-100%);
 }
   
-.grid-proyectos  a:hover span,
-.grid-proyectos [data-animation] a:hover span {
+.grid-proyectos  .item:hover .background,
+.grid-proyectos [data-animation] .item:hover .background {
     transform: none;
 }
-
+ 
 #contacto{
     display: block;
     height: 90vh;
