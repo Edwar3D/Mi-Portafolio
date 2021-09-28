@@ -15,6 +15,9 @@ body{
     visibility: hidden;
 }
 
+.nav{
+    height: 0;
+}
 .navigation{
     position: fixed;
     top: 0;
