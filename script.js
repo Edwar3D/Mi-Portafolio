@@ -91,3 +91,16 @@ async function handleSubmit(event){
           })
     }
 }
+
+function toggleMenu(){
+    var toggle = document.querySelector('.toggle');
+    var menu = document.querySelector('.navigation');
+    toggle.classList.toggle('active');
+    menu.classList.toggle('active')
+    if(toggle.classList.contains('active')){
+        toggle.firstElementChild.name='close-outline';
+    }else{
+        toggle.firstElementChild.name='menu-outline';
+    }
+   
+}

@@ -11,6 +11,9 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 
+.toggle{
+    visibility: hidden;
+}
 
 .navigation{
     position: fixed;
@@ -166,8 +169,10 @@ section{
     padding-top: 10%;
 }
 
-.inicio img{
-    height: 100%;
+.inicio .perfil{
+    margin-top: 15vh;
+    margin-right: 5%;
+    height: 85vh;
 }
 .wellcome h1{
     color: #34a0a4;
@@ -238,7 +243,7 @@ dd a{
 }
 
 #experiencia h3 {
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 2pt;
     color: #eeedf0;
 }

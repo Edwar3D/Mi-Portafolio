@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Marcelino Diaz Diaz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSmall.css">
 </head>
 
 <body>
     <div class="nav">
+        <div class="toggle" onclick="toggleMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
         <div class="navigation">
             <ul>
                 <li data-url="inicio" class="option active">
@@ -73,8 +77,9 @@
                     <h1>Soy Eduardo Marcelino Diaz Diaz</h1>
                     <p>Ing. Desarrollo de Software</p>
                 </div>
-                <img src="" alt="">
+                <img class="perfil" src="images/imagen.png" alt="">
             </div>
+            
         </section>
 
         <section id="acercaDeMi" class="acerca">
@@ -202,7 +207,7 @@
                                     <circle class="p75" cx="60" cy="60" r="49" stroke-linecap="round" />
                                 </svg>
                             </div>
-                            <p>Boostrapt</p>
+                            <p>Bootstrap</p>
                         </div>
                     </div>
 
@@ -253,7 +258,7 @@
                 </div>
                 <div class="type">
                     <h3 class="title">LENGUAJES</h3>
-                    <div class="skills">
+                    <div class="skills lenguages">
                         <div class="skill">
                             <div class="percentage">
                                 <div class="inner">
@@ -409,6 +414,17 @@
         <section id="contacto">
             <h2 class="title">Contacto</h2>
             <div class="container">
+                <form id="contactme" action="https://formspree.io/f/mgerqwvl" method="POST" >
+                    <h4>Envíame un correo</h4>
+                    <label for="name">Nombre completo</label>
+                    <input name="name" type="text" required>
+                    <label for="email">Correo</label>
+                    <input name="email" type="email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" form="contactme" cols="35" rows="10" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+
                 <div class="links">
                     <a href="https://www.linkedin.com/in/edumdiaz" target="_blank">
                         <span class="icon">
@@ -429,16 +445,6 @@
                         <span class="title">Git Hub</span>
                     </a>
                 </div>
-                <form id="contactme" action="https://formspree.io/f/mgerqwvl" method="POST" >
-                    <h4>Envíame un correo</h4>
-                    <label for="name">Nombre completo</label>
-                    <input name="name" type="text" required>
-                    <label for="email">Correo</label>
-                    <input name="email" type="email" required>
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" form="contactme" cols="35" rows="10" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
             </div>
         </section>
     </div>
