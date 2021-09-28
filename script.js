@@ -59,3 +59,35 @@ function activeLink() {
 
 listOptions.forEach((item) =>
     item.addEventListener('click', activeLink));
+
+
+const form = document.querySelector('#contactme');
+
+form.addEventListener('submit', handleSubmit);
+
+async function handleSubmit(event){
+    event.preventDefault();
+    const formData = new FormData(this);
+    const response = await fetch(this.action, {
+        method: this.method,
+        body:formData,
+        headers:{
+            'Accept': 'application/json'
+        }
+    });
+    if(response.ok){
+        this.reset();
+        Swal.fire(
+            'Mensaje enviado',
+            'Gracias por contactarme, le responderé pronto',
+            'success'
+          )
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un error al enviar el mesaje',
+            footer: '<a href="mailto:eduardom2diaz@gmail.com">Enviar correo manual</a>'
+          })
+    }
+}

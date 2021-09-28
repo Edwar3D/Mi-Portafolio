@@ -328,7 +328,8 @@
                     <img src="images/buscaminas.jpg" alt="imagen del proyecto">
                     <p>Buscaminas</p>
                     <div class="background">
-                        <span>Proyecto escolar hecho con HTML, CSS y JQuery.Una copia del clásico juego del buscaminas</span>
+                        <span>Proyecto escolar hecho con HTML, CSS y JQuery.Una copia del clásico juego del
+                            buscaminas</span>
                         <a href="https://github.com/Edwar3D/Buscaminas" target="_blank">Repositorio</a>
                         <a href="https://edwar3d.github.io/Buscaminas/" target="_blank">Visualizar</a>
                     </div>
@@ -337,7 +338,8 @@
                     <img src="images/aztechgames.jpg">
                     <p>Aztech Games</p>
                     <div class="background">
-                        <span>Proyecto escolar deployado en Heroku utilizando la base de datos de PostgreSQL, hecho con Adonis js y Boostrapt, un página web para promocionar videojuegos</span>
+                        <span>Proyecto escolar deployado en Heroku utilizando la base de datos de PostgreSQL, hecho con
+                            Adonis js y Boostrapt, un página web para promocionar videojuegos</span>
                         <a href="https://github.com/Edwar3D/aztechgames" target="_blank">Repositorio</a>
                         <a href="https://aztech-games.herokuapp.com/" target="_blank">Visualizar</a>
                     </div>
@@ -360,38 +362,44 @@
                         <a href="https://edwar3d.github.io/Order-Summary-challenge/" target="_blank">Visualizar</a>
                     </div>
                 </div>
-                
+
                 <div class="item">
                     <img src="images/Contacts QR.png">
                     <p>Contacts QR</p>
                     <div class="background">
-                        <span>Proyecto escolar hecho con Flutter, una aplicación móvil para android la cual comparte los contactos por código QR </span>
+                        <span>Proyecto escolar hecho con Flutter, una aplicación móvil para android la cual comparte los
+                            contactos por código QR </span>
                         <a href="https://github.com/Edwar3D/ContactsQRApp" target="_blank">Repositorio</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.chem.qr_app" target="_blank">Visualizar</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.chem.qr_app"
+                            target="_blank">Visualizar</a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/chem-organizar.jpg">
                     <p>Chem Organizer</p>
                     <div class="background">
-                        <span>Proyecto escolar por equipo hecho con Flutter, una aplicación móvil para android utilizando Firebase</span>
+                        <span>Proyecto escolar por equipo hecho con Flutter, una aplicación móvil para android
+                            utilizando Firebase</span>
                         <!-- <a href="https://github.com/Edwar3D/ContactsQRApp" target="_blank">Repositorio</a> -->
-                        <a href="https://play.google.com/store/apps/details?id=com.chem.chem_organizer" target="_blank">Visualizar</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.chem.chem_organizer"
+                            target="_blank">Visualizar</a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/comandos-git.png">
                     <p>Autómata de comados git</p>
                     <div class="background">
-                        <span>Proyecto hecho java para simular como funciona un autómata, usando como ejemplo los principales comandos de Git</span>
+                        <span>Proyecto hecho java para simular como funciona un autómata, usando como ejemplo los
+                            principales comandos de Git</span>
                         <a href="https://github.com/Edwar3D/Automata-de-comados-git" target="_blank">Repositorio</a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/analizador.jpg">
-                    <p>Analizador Sintactico</p>
+                    <p>Analizador sintáctico</p>
                     <div class="background">
-                        <span>Proyecto hecho java y javaFX para simular un compilador de un nuevo lenguaje con el uso de gramaticas y expresiones regulares</span>
+                        <span>Proyecto hecho java y javaFX para simular un compilador de un nuevo lenguaje con el uso de
+                            gramaticas y expresiones regulares</span>
                         <a href="https://github.com/Edwar3D/analizador-sintactico" target="_blank">Repositorio</a>
                     </div>
                 </div>
@@ -401,31 +409,42 @@
         <section id="contacto">
             <h2 class="title">Contacto</h2>
             <div class="container">
-                <div class="contactos">
-
-                    <a href="https://github.com/Edwar3D?tab=repositories">
-                        <span class="icon">
-                            <ion-icon name="logo-github">
-                        </span>
-                        <span class="title">Git Hub</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/edumdiaz">
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/edumdiaz" target="_blank">
                         <span class="icon">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </span>
                         <span class="title">Linkedin</span>
                     </a>
+                    <a href="https://twitter.com/EDward2Dz" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </span>
+                        <span class="title">Twitter</span>
+                    </a>
+                    <a href="https://github.com/Edwar3D?tab=repositories" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="logo-github">
+                        </span>
+                        <span class="title">Git Hub</span>
+                    </a>
                 </div>
-
-                <div class="mensaje">
-                    <p>adasd</p>
-                </div>
+                <form id="contactme" action="https://formspree.io/f/mgerqwvl" method="POST" >
+                    <h4>Envíame un correo</h4>
+                    <label for="name">Nombre completo</label>
+                    <input name="name" type="text" required>
+                    <label for="email">Correo</label>
+                    <input name="email" type="email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" form="contactme" cols="35" rows="10" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </section>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "> </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -321,8 +321,7 @@ circle{
     stroke: url(#GradientColor);
     stroke-width: 18px;
     stroke-dasharray: 310;
-    stroke-dashoffset: 310;  
-   
+    stroke-dashoffset: 310;    
 }
 
 svg {
@@ -451,7 +450,7 @@ svg {
     font-weight: 700;
 }
 .grid-proyectos .item .background a:hover{
-    color: #eeedf0;
+    color: #0CB8A3;
     font-weight: 700;
 }
 .grid-proyectos .item:hover img {
@@ -465,34 +464,99 @@ svg {
  
 #contacto{
     display: block;
-    height: 90vh;
 }
 
 #contacto .container{
+    margin-top: 0px;
     display: flex;
     justify-content: space-around;
-    position: relative;
+    align-items: center;
 }
-
-.contactos{
-    display: block;
-    padding-top: 50px;
-}
-
-.contactos a{
-    display: block;
-    margin-bottom: 50px;
+#contacto .container a{
     color: #eeedf0;
+    height: 50px;
+    margin-bottom: 30px;
     text-decoration: none;
-    font-size: 20pt;
-    letter-spacing: 2pt;
-    width: 100%;
-    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.contactos a ion-icon{
-    background: red;
-    width: 40px;
+#contacto .container a:hover .title {
+    animation: titleAnim .7s  forwards;
+}
+
+
+#contacto  .container a .title{
+    font-size: 13pt;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-100%) rotate(-90deg);
+}
+
+#contacto .container a ion-icon{
+    width: 50px;
+    height: 50px;
+}
+
+#contacto .container img{
     height: 40px;
-    right:100;
+}
+
+@keyframes titleAnim{
+    to{
+        transform: rotate(0deg);
+        margin-left: 15px;
+        visibility: visible;
+    }
+}
+
+form{
+    background: #06544b75;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    display: block;
+    color: #eeedf0;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+form h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form label{
+    display: block;
+    font-size: 10pt;
+    text-align: left;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 90%;
+    margin:10px 5%;
+}
+
+form textarea{
+    margin: 5%;
+    overflow-y: auto;
+    padding: 5px;
+    height: fit-content;
+    resize: none;
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+    width: 90%;
+}
+
+form button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#8d2e4f;
+    color: #eeedf0;
+    font-weight: 500;
+    letter-spacing: .5pt;
 }
