@@ -47,6 +47,13 @@
         background: #232323ee;
     }
 
+    .active:hover .title{
+        color:#fff;
+    }
+    .active:hover .icon{
+        color:#fff;
+    }
+
     .container{
         padding: 0;
         margin: 0;
@@ -201,6 +208,7 @@
         height: auto;
         margin: 0;
     }
+
     .grid-proyectos{
     grid-template-columns: 300px;
     grid-template-rows: 250px 250px ;
@@ -217,13 +225,14 @@
     #contacto .container {
         display: block;
         width: 100vw;
+        height: 0;
         padding: 5%;
     }
 
     form{
         width:90%;
         height: auto;
-        margin: 20px 0;
+        margin: 20px 5%;
     }
 
     form textarea{
@@ -233,11 +242,30 @@
         margin-top: 25px;
         display: flex;
         margin-bottom: 0;
+        height:auto;
+        padding: 0;
+        justify-content: center;
     }
 
-    .links a .icon .icon-inner, .ionicon, svg{
-        height:5px;
-        width: 5px;
+    #contacto .container a:hover .title {
+        animation: none;
     }
- 
+    
+    #contacto  .container a {
+        display: block;
+        margin: 10px;
+
+    }
+    #contacto  .container a .icon{
+        text-align: center;
+        display: block;
+    }
+    
+    #contacto  .container a .title{
+        font-size: 10pt;
+        visibility: visible;
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+    
+
 }
