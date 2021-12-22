@@ -5,6 +5,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     min-width: 100hv;
     background: #232323;
@@ -251,12 +255,23 @@ dd a{
     color: #eeedf0;
 }
 
-#experiencia dl dd p{
+#experiencia dl dd p {
     margin-top: 20px;
+    font-weight: 200;
+    text-align: justify;
+    color: #70bab1;
+}
+
+#experiencia dl dd ul li {
+    margin-top: 10px;
+    font-weight: 200;
+    text-align: justify;
+    color: #70bab1;
 }
 
 #experiencia dl dd p b{
    margin: 50px;
+   color: #0CB8A3;
 }
 
 #skills{
